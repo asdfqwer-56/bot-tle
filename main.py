@@ -16,8 +16,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-TOKEN = "YOUR_BOT_TOKEN"
-ADMINS = [123456789]
+TOKEN = "7820274403:AAGPEUWVFfLPtjDZoOnE1q7446Sr0VBZGmE"
+ADMINS = [7154049676]
 VIP_USERS = {}
 
 # الرد الآمن
@@ -41,7 +41,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("📚 الأوامر", callback_data="help_cmd")],
         [InlineKeyboardButton("🎟 VIP", callback_data="vip_info")],
         [InlineKeyboardButton("🗂 تحميل ملفات ببجي", callback_data="pubg_files")],
-        [InlineKeyboardButton("👨‍💻 الدعم", url="https://t.me/username")]
+        [InlineKeyboardButton("👨‍💻 الدعم", url="https://t.me/XP_ARENA")]
     ]
     msg = f"✨ **مرحبًا {user.first_name}** ✨\n\nأهلاً بك في بوتنا! اختر من الخيارات:"
     await safe_reply(update, msg, reply_markup=InlineKeyboardMarkup(buttons))
